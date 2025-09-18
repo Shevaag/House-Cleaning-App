@@ -53,6 +53,19 @@ flutter pub get
 # Run the app
 flutter run
 
+### Firebase Setup (Simple)
+
+1. Go to [Firebase Console](https://console.firebase.google.com/) and create a new project.
+2. Add an **Android app** to the project:
+  - Download the `google-services.json` file.
+  - Place it inside your project at `android/app/`.
+3. (Optional) Add an **iOS app** if needed:
+  - Download `GoogleService-Info.plist` and place it in `ios/Runner/`.
+4. Enable **Authentication** (Email/Password) and **Firestore** in Firebase.
+5. That’s it! The app will now connect to Firebase using your project configuration.
+
+> ⚠️ Do **not** commit `google-services.json` or `GoogleService-Info.plist` to a public repository.
+
 ## 📷 Screenshots
 
 **Starting Screen**  
